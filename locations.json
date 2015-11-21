@@ -1,0 +1,70 @@
+{
+	"recyclePoints":{
+		"1":{
+			"latitude":51.704055, 
+			"longitude":-0.028152,
+			"cashback":true,
+			"owner":"Calgary Recyling"
+		},
+		"2":{
+			"latitude":51.716819, 
+			"longitude":0.194321,
+			"cashback":false,
+			"owner":"Boris Recyling"
+		},
+		"3":{
+			"latitude":51.666593, 
+			"longitude":0.191574,
+			"cashback":false,
+			"owner":"Boris Recyling"
+		},
+		"4":{
+			"latitude":51.716819,
+			"longitude":-0.353622, 
+			"cashback":true,
+			"owner":"Calgary Recyling"
+		},
+		"5":{
+			"latitude":51.682774,
+			"longitude":0.280838, 
+			"cashback":true,
+			"owner":"Calgary Recyling"
+		},
+		"6":{
+			"latitude":51.682774,
+			"longitude":0.280838, 
+			"cashback":true,
+			"owner":"Calgary Recyling"
+		},
+		"7":{
+			"latitude":51.681071, 
+			"longitude":0.328903, 
+			"cashback":false,
+			"owner":"Alpha Recyling"
+		},
+		"8":{
+			"latitude":51.681071, 
+			"longitude":0.328903, 
+			"cashback":false,
+			"owner":"Westminster Council"
+		},
+		"9":{
+			"latitude":51.536513,  
+			"longitude":-0.106602,
+			"cashback":false,
+			"owner":"Westminster Council"
+		},
+		"10":{
+			"latitude":51.551032,  
+			"longitude":-0.066433, 
+			"cashback":false,
+			"owner":"Westminster Council"
+		},
+		"11":{
+			"latitude":51.524552,  
+			"longitude":-0.097332, 
+			"cashback":false,
+			"owner":"Westminster Council"
+		},
+	}
+}
