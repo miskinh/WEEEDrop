@@ -35,6 +35,7 @@ function initMap() {
   var infoWindow1 = new google.maps.InfoWindow({map: map}); 
   var infoWindow2 = new google.maps.InfoWindow({map: map});  
   var infoWindow3 = new google.maps.InfoWindow({map: map});
+
   var marker = new google.maps.Marker({
     position: myPlace1,
     map: map,
@@ -50,12 +51,16 @@ function initMap() {
     map: map,
     title: 'Place 3'
     });
-infoWindow1.setPosition(myPlace1);
+//infoWindow1.setPosition(myPlace1);
 infoWindow1.setContent('Place 1');
-infoWindow2.setPosition(myPlace2);
-infoWindow2.setContent('Place 2!');
-infoWindow3.setPosition(myPlace3);
+//infoWindow2.setPosition(myPlace2);
+infoWindow2.setContent('Place 2');
+//infoWindow3.setPosition(myPlace3);
+    
 infoWindow3.setContent('Place 3');
+marker.addListener('click', function(){infoWindow1.open(map, marker);});   
+marker2.addListener('click', function(){infoWindow2.open(map, marker2);});
+marker3.addListener('click', function(){infoWindow3.open(map, marker3);});
     
 var infoWindow = new google.maps.InfoWindow({map: map});
     
