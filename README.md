@@ -10,4 +10,4 @@ Add a box for the postcode;
 Add a details page for the location;
 Add a "i like it" button that sends an email according to your google account
 
-Also i have added a css/html template to daltonscott.co.uk. We will integrate this once i get there.
+Also i have added a css/html template to daltonscott.co.uk/weeedrop. We will integrate this once i get there.
