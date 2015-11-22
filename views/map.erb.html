@@ -24,15 +24,17 @@
 // locate you.
 
 function initMap() {
-  var myPlace1 = {lat:51.508046 , lng: -0.079250};
+  var myPlace1 = {lat:51.508046 , lng: -0.09250};
   var myPlace2 = {lat: 51.505662, lng: -0.085704};
   var myPlace3 = {lat: 51.506223, lng: -0.091010};
     
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
+    center: {lat: 51.50528, lng: -0.08698},
     zoom: 14
   });
-    
+  var infoWindow1 = new google.maps.InfoWindow({map: map}); 
+  var infoWindow2 = new google.maps.InfoWindow({map: map});  
+  var infoWindow3 = new google.maps.InfoWindow({map: map});
   var marker = new google.maps.Marker({
     position: myPlace1,
     map: map,
@@ -48,7 +50,14 @@ function initMap() {
     map: map,
     title: 'Place 3'
     });
-  var infoWindow = new google.maps.InfoWindow({map: map});
+infoWindow1.setPosition(myPlace1);
+infoWindow1.setContent('Place 1');
+infoWindow2.setPosition(myPlace2);
+infoWindow2.setContent('Place 2!');
+infoWindow3.setPosition(myPlace3);
+infoWindow3.setContent('Place 3');
+    
+var infoWindow = new google.maps.InfoWindow({map: map});
     
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
@@ -69,6 +78,7 @@ function initMap() {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }  
+
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
